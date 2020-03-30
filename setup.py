@@ -12,15 +12,14 @@ class BinaryDistribution(Distribution):
 
 setup(
     name='pybn254',
-    version='1.0.2',
+    version='1.0.5',
     description='Accelerated operations for BN254',
     packages=['pybn254'],
     package_data={
-        'pybn254': ['libff.dylib', 'libff.dylib'],
+        'pybn254': ['libff.dylib', 'libff.so'],
     },
     install_requires=['py_ecc'],
     distclass=BinaryDistribution,
     long_description=long_description,
     long_description_content_type='text/markdown'
-
 )
